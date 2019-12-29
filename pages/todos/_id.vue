@@ -13,10 +13,13 @@
     validate({params}) {
       return /^\d+$/.test(params.id)
     },
-    asyncData({params}) {
+    asyncData({params, error}) {
       return axios.get(`https://jsonplaceholder.typicode.com/todos/${params.id}`)
         .then(res => {
           return {title: res.data.title}
+        })
+        .catch(e => {
+          error({statusCode: 404, message: "Not Found"})
         })
     }
   })

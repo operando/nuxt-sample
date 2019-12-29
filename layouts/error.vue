@@ -5,6 +5,8 @@
     </div>
     <h1 v-if="error.statusCode === 404">ページが見つかりません</h1>
     <h1 v-else>エラーです</h1>
+    <h1 v-if="error.message !== undefined">{{error.message}}</h1>
+    <h1 v-else>エラーです</h1>
     <nuxt-link to="/">ホーム</nuxt-link>
   </div>
 </template>
