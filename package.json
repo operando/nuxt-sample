@@ -11,12 +11,13 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.9.0",
     "nuxt": "^2.0.0",
     "ress": "^2.0.2"
   },
   "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.4",
     "node-sass": "^4.13.0",
-    "sass-loader": "^8.0.0",
-    "@nuxt/typescript-build": "^0.5.4"
+    "sass-loader": "^8.0.0"
   }
 }
