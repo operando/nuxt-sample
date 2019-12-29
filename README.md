@@ -1,6 +1,29 @@
 # nuxt-sample
 
-> My groundbreaking Nuxt.js project
+## installation
+
+https://nuxtjs.org/guide/installation
+
+
+## nuxt.config.js
+
+### srcDir
+
+```
+srcDir: 'src/',
+```
+
+
+### router
+
+Nuxt.js のデフォルトの Vue Router 設定を上書きする
+
+
+## Nuxt TypeScript
+
+https://typescript.nuxtjs.org/
+
+
 
 ## Build Setup
 
