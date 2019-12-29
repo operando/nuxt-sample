@@ -24,6 +24,10 @@ Nuxt.js のデフォルトの Vue Router 設定を上書きする
 https://typescript.nuxtjs.org/
 
 
+## How to use CSS pre-processors?
+
+https://nuxtjs.org/faq/pre-processors/
+
 
 ## Build Setup
 
