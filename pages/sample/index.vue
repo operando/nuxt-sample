@@ -19,7 +19,10 @@
     //   const {data} = await axios.get(`https://jsonplaceholder.typicode.com/todos/1`);
     //   return {title: data.title}
     // }
-    asyncData({params}) {
+    asyncData({params, req, res}) {
+      if (process.server) {
+        return {title: "server"}
+      }
       return axios.get(`https://jsonplaceholder.typicode.com/todos/1`)
         .then(res => {
           return {title: res.data.title}
