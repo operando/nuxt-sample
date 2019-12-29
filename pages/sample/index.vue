@@ -1,14 +1,18 @@
 <template>
   <div class="container">
-    <h1>Hello Nuxt!!</h1>
+    <Logo/>
+    <h1>Hello Nuxt Sample Page!!</h1>
   </div>
 </template>
 
 <script lang="ts">
+  import Logo from '~/components/Logo.vue'
   import Vue from 'vue'
 
   export default Vue.extend({
-    components: {}
+    components: {
+      Logo
+    }
   })
 </script>
 
