@@ -2,7 +2,7 @@
   <div class="container">
     <Logo/>
     <h1>Hello Nuxt Sample Page!!</h1>
-    <h1 class="title">Title {{this.title}}</h1>
+    <h1 class="title">Title {{title}}</h1>
   </div>
 </template>
 
@@ -15,9 +15,15 @@
     components: {
       Logo
     },
-    async asyncData({params}) {
-      const {data} = await axios.get(`https://jsonplaceholder.typicode.com/todos/1`);
-      return {title: data.title}
+    // async asyncData({params}) {
+    //   const {data} = await axios.get(`https://jsonplaceholder.typicode.com/todos/1`);
+    //   return {title: data.title}
+    // }
+    asyncData({params}) {
+      return axios.get(`https://jsonplaceholder.typicode.com/todos/1`)
+        .then(res => {
+          return {title: res.data.title}
+        })
     }
   })
 </script>
