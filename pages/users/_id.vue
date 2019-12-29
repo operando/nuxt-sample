@@ -8,7 +8,10 @@
   import Vue from 'vue'
 
   export default Vue.extend({
-    name: "_id"
+    name: "_id",
+    validate({params}) {
+      return /^\d+$/.test(params.id)
+    }
   })
 </script>
 
