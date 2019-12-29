@@ -8,6 +8,7 @@
   import Vue from 'vue'
 
   export default Vue.extend({
+    layout: 'users',
     name: "_id",
     validate({params}) {
       return /^\d+$/.test(params.id)
@@ -16,13 +17,5 @@
 </script>
 
 <style lang="scss" scoped>
-  .container {
-    margin: 0 auto;
-    min-height: 100vh;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
 
 </style>

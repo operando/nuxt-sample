@@ -21,7 +21,7 @@ export default {
   /*
   ** Global CSS
   */
-  css: ['ress',
+  css: ['ress', '~/assets/main.scss'
   ],
   env: ['Hoge'],
   /*
