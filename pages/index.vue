@@ -11,9 +11,16 @@
 
 <script lang="ts">
   import Vue from 'vue'
+  import {Context} from "@nuxt/types";
 
   export default Vue.extend({
-    components: {}
+    components: {},
+    mounted(): void {
+      this.$myInjectedFunction("index")
+    },
+    asyncData(context: Context) {
+      context.app.myInjectedFunction('ctx!')
+    }
   })
 </script>
 

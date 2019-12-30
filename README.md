@@ -50,6 +50,26 @@ https://github.com/nuxt/nuxt.js/blob/dev/packages/webpack/src/config/base.js
 設定を変えたかったら、build.extendで変える
 https://nuxtjs.org/api/configuration-build#extend
 
+## Nuxt 2.9以降 TypeScriptでContextの型を指定するとき
+
+- [Nuxt×TypeScriptでfetch, asyncDataの引数に型を指定する](https://qiita.com/simochee/items/77e074e48d036ce2444b)
+
+```javascript
+import { Context } from '@nuxt/types';
+```
+
+
+## plugins
+
+### プラグイン名の規約
+
+- XXX.client.js
+ - クライアント限定のプラグインであることを自動で判別
+- XXX.server.js
+　- サーバサイド限定のプラグインであることを自動で判別
+- 付けない場合、どちらもで読み込まれるプラグインになる
+ - mode指定すれば別
+
 ## Build Setup
 
 ``` bash

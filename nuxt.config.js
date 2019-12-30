@@ -27,7 +27,14 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    '~/plugins/vue-inject',
+    '~/plugins/ctx-inject',
+    '~/plugins/combined-inject',
+    '~/plugins/vue-notifications.client',
+    // mode clientつけないと "Unexpected token 'export'"のエラーになった. SSR周りかな？
+    // {src: '~/plugins/vue-notifications', mode: 'client'},
+  ],
   /*
   ** Nuxt.js dev-modules
   */
