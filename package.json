@@ -13,6 +13,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.9.0",
     "nuxt": "^2.0.0",
+    "nuxt-user-agent": "^1.2.2",
     "ress": "^2.0.2"
   },
   "devDependencies": {
