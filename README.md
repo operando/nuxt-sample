@@ -69,6 +69,13 @@ import { Context } from '@nuxt/types';
 　- サーバサイド限定のプラグインであることを自動で判別
 - 付けない場合、どちらもで読み込まれるプラグインになる
  - mode指定すれば別
+ 
+
+## buildModules
+
+- buildModulesに指定すれば、開発時とビルド時のみ適用されるモジュールになる
+ - '@nuxt/typescript-build'とかdebug用のモジュールとかが該当するかな
+- プロダクションでのモジュールが減るのでよい
 
 ## Build Setup
 

@@ -42,7 +42,7 @@ export default {
   /*
   ** Nuxt.js modules
   */
-  modules: [],
+  modules: ['~/modules/simple'],
   /*
   ** Build configuration
   */
