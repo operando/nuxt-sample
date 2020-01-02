@@ -1,3 +1,3 @@
-export default function SimpleModule(moduleOptions) {
-
-}
+// export default function SimpleModule(moduleOptions) {
+//
+// }
